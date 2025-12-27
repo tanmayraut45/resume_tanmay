@@ -1,0 +1,281 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\setlength{\footskip}{4.08003pt}
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{minipage}[c]{0.78\textwidth}
+    {\Huge \scshape Tanmay Raut} \\ \vspace{6pt}
+    \small +91-8308936941 \hspace{1em} $|$ \hspace{1em} \href{mailto:tanmayraut0@gmail.com}{\underline{tanmayraut0@gmail.com}} \\[3pt]
+    \href{https://www.linkedin.com/in/tanmay-raut-4ab152241/}{\underline{linkedin.com/in/tanmay-raut45}} \hspace{1em} $|$ \hspace{1em} \href{https://tanmayraut.netlify.app}{\underline{tanmayraut.netlify.app}}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.18\textwidth}
+    \raggedleft
+    \includegraphics[width=2.4cm]{tanmay_passporttt.png}
+\end{minipage}
+\vspace{2pt}
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \resumeItem{
+      Adaptable technical professional with startup experience working directly with founders on growth challenges. Contributed to projects using Java, SQL, and React Native, shipping a complete mobile application to production. Participated in architecture decisions, hiring processes, and problem-solving that created tangible business value.
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\vspace{+4pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer (Full-Time)}{Aug 2024 -- Present}
+      {BrainChain}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Transformed Excalidraw wireframes into 20+ React Native screens for healthcare app with multi-language support (Hindi, Marathi, English), reducing development time by 30\%}
+        \resumeItem{Implemented SQLite and AsyncStorage for offline data persistence, ensuring reliable user experience in low-connectivity environments}
+        \resumeItem{Deployed production-ready application to Google Play Store with email subscription APIs}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern}{Jun 2024 -- Jul 2024}
+      {BrainChain}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Engineered a Java-based user management system implementing core concepts including inheritance, polymorphism, and exception handling}
+        \resumeItem{Integrated JDBC for database connectivity, creating prepared statements for CRUD operations that ensured data integrity and security}
+        \resumeItem{Optimized SQL queries using JDBC batch processing, reducing transaction time for bulk operations by 40\%}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-1pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pimpri Chinchwad College of Engineering, Pune}{CGPA 7.7/10}
+      {Bachelor of Technology in Computer Science and Engineering}{June 2020 -- June 2024}
+  \resumeSubHeadingListEnd
+\vspace{-1pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages, Systems and Version Control}{: Core Java, SQL, Linux, Git/GitHub} \\
+     \textbf{Database Technologies}{: SQL, RDBMS} \\
+     \textbf{Frameworks \& Libraries}{: React Native, Expo} \\
+     \textbf{Tools}{: Obsidian Excalidraw, API Integration} \\
+     \textbf{Soft Skills}{: Client Collaboration, Agile Development, Problem Solving, Team Leadership}
+    }}
+ \end{itemize}
+\vspace{-7pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeProjectHeading
+    {\textbf{Bank Management System} - \emph{| Tech stack: Java, JDBC, MySQL, SQL, Eclipse}}{}
+    \resumeItemListStart
+        \resumeItem{Developed comprehensive banking application using Java and JDBC for backend database management that performs CRUD operations on Database with concepts of Transaction Handling}
+        \resumeItem{Implemented Customer Account Management system enabling creation, updating, and management of customer accounts with secure data validation and error handling}
+        \resumeItem{Facilitated Transaction Handling including deposits, withdrawals, and transfers using ACID Properties to ensure data consistency and reliability}
+        \resumeItem{Utilized JDBC and Prepared Statements for secure Database Connectivity and interaction, preventing SQL injection attacks and optimizing query performance}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Healthcare Application} $|$ \href{https://play.google.com/store/apps/details?id=com.thoughtpro}{\underline{Play Store}} - \emph{Tech stack: React Native, i18n, Git, Yarn, CLI}}{}
+    \resumeItemListStart
+        \resumeItem{Led complete development cycle from Excalidraw wireframes to Figma design handoff, collaborating with lead and junior developers to implement 20+ responsive screens achieving 95\% iOS/Android code reuse}
+        \resumeItem{Integrated React Native i18n library for seamless multi-language support across Hindi, Marathi, and English with dynamic content switching and proper locale management}
+        \resumeItem{Built interactive data visualization dashboard using React Native Chart Kit connected to AsyncStorage, creating real-time charts for sleep tracking, mood patterns, and health analytics}
+        \resumeItem{Established Git branching strategy with feature branches and code reviews, managing collaborative development workflow for successful Google Play Store deployment}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{CalSync} $|$ \href{https://calsyncapp.vercel.app/}{\underline{Live Demo}} $|$ \href{https://github.com/tanmayraut45/Meeting-Viewer-App}{\underline{Code}} - \emph{Tech stack: Next.js, React, TypeScript, Tailwind CSS, Composio, Supabase, Vercel}}{}
+    \resumeItemListStart
+        \resumeItem{CalSync is a lightweight meeting viewer that connects to Google Calendar through the Composio MCP (Auth Links + Proxy API) and persists connections in Supabase}
+        \resumeItem{Shows 5 upcoming and 5 recent past meetings with attendee lists, duration, and expandable details — all with skeleton loading, error handling and a clean responsive UI}
+        \resumeItem{Composio integration: uses Composio v3 Auth Links to create secure connection flows}
+        \resumeItem{Persistent sessions: Supabase (Postgres) stores OAuth sessions so connections survive server restarts}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{+1pt}
+
+%-----------Positions of Responsibility-----------
+% \section{Positions of Responsibility}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Vice Chair Person (technical)}{Aug 2022 -- Present}
+%       {DJs Codestars (Competitive Coding Committee)}{Mumbai, Maharashtra}
+%       \vspace{-4pt}
+%     \resumeSubheading
+%       {Events Team}{Dec 2020 -- Aug 2021}
+%       {DJ CSI (The DJ Sanghvi Student Chapter of the renowned national organization CSI.)}{Mumbai, Maharashtra}
+%       \vspace{-4pt}
+%     \resumeSubheading
+%       {Technical Head and Mentor}{Aug 2021 -- Aug 2022}
+%       {DJs Codestars (Competitive Coding Committee)}{Mumbai, Maharashtra}
+%     %   \vspace{-4pt}
+    
+%   \resumeSubHeadingListEnd
+% \vspace{-10pt}
+
+%-----------INVOLVEMENT---------------
+%-\section{Awards and Accolades}
+    % \resumeSubHeadingListStart
+        % \resumeSubheading{}{}
+        % {}{}
+      %  \vspace{-4pt}
+%-\resumeItemListStart
+              %  \resumeItem{Achieved Rank 56 in ICPC Regionals 2022}
+               % \vspace{-4pt}
+                %\resumeItem{Rank 1765 globally and AIR 1250 in Google Kickstart 2022 Round C.}
+               % \vspace{-4pt}
+               % \resumeItem{Rank 147 globally and AIR 103 in Credit Suisse Global Coding Challenge 2022.}
+              %  \vspace{-4pt}
+               % \resumeItem{4-star coder on CodeChef and 1250 rated on Codeforces (competitive coding sites).}
+               % \vspace{-4pt}
+                %\resumeItem{Qualified for the 2nd round of Flipkart Grid 4.0 hackathon, ranked among top 2.7\% participants.}
+               % \vspace{-4pt}
+           % \resumeItemListEnd
+        
+    % \resumeSubHeadingListEnd
+
+%-----------INVOLVEMENT---------------
+% \section{Extra Curricular Activities}
+%     % \resumeSubHeadingListStart
+%      \vspace{+4pt}
+%         % \resumeSubheading{}{}
+%         % {}{}
+%             \resumeItemListStart
+%                  \resumeItem{Participated in ANANTYA 2024 for final year project.}
+%                 \vspace{-4pt}
+%                 % \resumeItem{Organized Code-Uncode (Coding Competition by DJ Codestars Student Chapter).}
+%                 % \vspace{-4pt}
+%                 \resumeItem{Enjoy playing cricket, Swimming, playing Table tennis}
+%                 \vspace{-4pt}
+%             \resumeItemListEnd
+        
+%     % \resumeSubHeadingListEnd
+
+\end{document}
