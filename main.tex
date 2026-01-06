@@ -27,15 +27,8 @@
 
 
 %----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+% Using Inter font for modern, ATS-friendly look
+\usepackage[sfdefault]{inter}
 
 
 \pagestyle{fancy}
@@ -136,7 +129,7 @@
 \section{Summary}
   \resumeSubHeadingListStart
     \resumeItem{
-      Adaptable technical professional with startup experience working directly with founders on growth challenges. Contributed to projects using Java, SQL, and React Native, shipping a complete mobile application to production. Participated in architecture decisions, hiring processes, and problem-solving that created tangible business value.
+      Full-stack developer with 1.5+ years building production mobile apps using React Native and TypeScript. Led frontend development for ThoughtPro healthcare app (live on Google Play Store), while also handling backend integration including JWT authentication and REST APIs. Seeking full-stack or frontend-focused roles.
     }
   \resumeSubHeadingListEnd
 
@@ -158,8 +151,7 @@
       {Intern}{Jun 2024 -- Jul 2024}
       {BrainChain}{Pune, India}
       \resumeItemListStart
-        \resumeItem{Engineered a Java-based user management system implementing core concepts including inheritance, polymorphism, and exception handling}
-        \resumeItem{Integrated JDBC for database connectivity, creating prepared statements for CRUD operations that ensured data integrity and security}
+        \resumeItem{Built Java-based user management system with JDBC, implementing inheritance, polymorphism, and exception handling}
         \resumeItem{Optimized SQL queries using JDBC batch processing, reducing transaction time for bulk operations by 40\%}
       \resumeItemListEnd
 
@@ -179,11 +171,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Languages, Systems and Version Control}{: Core Java, SQL, Linux, Git/GitHub} \\
-     \textbf{Database Technologies}{: SQL, RDBMS} \\
-     \textbf{Frameworks \& Libraries}{: React Native, Expo} \\
-     \textbf{Tools}{: Obsidian Excalidraw, API Integration} \\
-     \textbf{Soft Skills}{: Client Collaboration, Agile Development, Problem Solving, Team Leadership}
+     \textbf{Languages \& Systems}{: JavaScript, TypeScript, Java, SQL, HTML/CSS, Linux, Git/GitHub} \\
+     \textbf{Frameworks \& Libraries}{: React Native, React, React Hooks, Next.js, Expo, Redux, Context API, Tailwind CSS, i18n} \\
+     \textbf{Databases \& Tools}{: SQLite, Supabase, AsyncStorage, PostgreSQL, REST APIs, JWT Authentication} \\
+     \textbf{AI \& Integration}{: AI Agents, MCP Server Integration, Composio, LLM APIs}
     }}
  \end{itemize}
 \vspace{-7pt}
@@ -192,30 +183,25 @@
 \section{Projects}
     \vspace{-5pt}
     \resumeProjectHeading
-    {\textbf{Bank Management System} - \emph{| Tech stack: Java, JDBC, MySQL, SQL, Eclipse}}{}
+    {\textbf{Healthcare Application (ThoughtPro)} $|$ \href{https://play.google.com/store/apps/details?id=com.thoughtpro}{\underline{Play Store}} - \emph{Tech stack: React Native, TypeScript, i18n, Chart Kit}}{}
     \resumeItemListStart
-        \resumeItem{Developed comprehensive banking application using Java and JDBC for backend database management that performs CRUD operations on Database with concepts of Transaction Handling}
-        \resumeItem{Implemented Customer Account Management system enabling creation, updating, and management of customer accounts with secure data validation and error handling}
-        \resumeItem{Facilitated Transaction Handling including deposits, withdrawals, and transfers using ACID Properties to ensure data consistency and reliability}
-        \resumeItem{Utilized JDBC and Prepared Statements for secure Database Connectivity and interaction, preventing SQL injection attacks and optimizing query performance}
+        \resumeItem{Single-handedly developed ThoughtPro healthcare app frontend using React Native, implementing 20+ responsive screens with 95\% iOS/Android code reuse}
+        \resumeItem{Handled full backend integration — JWT login flow, REST APIs, AsyncStorage for offline sync, and Chart Kit for health analytics visualization}
+        \resumeItem{Deployed production app to Google Play Store with multi-language support (Hindi, Marathi, English)}
     \resumeItemListEnd
 
     \resumeProjectHeading
-    {\textbf{Healthcare Application} $|$ \href{https://play.google.com/store/apps/details?id=com.thoughtpro}{\underline{Play Store}} - \emph{Tech stack: React Native, i18n, Git, Yarn, CLI}}{}
+    {\textbf{CalSync} $|$ \href{https://calsyncapp.vercel.app/}{\underline{Live Demo}} $|$ \href{https://github.com/tanmayraut45/Meeting-Viewer-App}{\underline{Code}} - \emph{Tech stack: Next.js, TypeScript, Tailwind CSS, Composio, Supabase}}{}
     \resumeItemListStart
-        \resumeItem{Led complete development cycle from Excalidraw wireframes to Figma design handoff, collaborating with lead and junior developers to implement 20+ responsive screens achieving 95\% iOS/Android code reuse}
-        \resumeItem{Integrated React Native i18n library for seamless multi-language support across Hindi, Marathi, and English with dynamic content switching and proper locale management}
-        \resumeItem{Built interactive data visualization dashboard using React Native Chart Kit connected to AsyncStorage, creating real-time charts for sleep tracking, mood patterns, and health analytics}
-        \resumeItem{Established Git branching strategy with feature branches and code reviews, managing collaborative development workflow for successful Google Play Store deployment}
+        \resumeItem{Developed lightweight meeting viewer connecting to Google Calendar through Composio v3 Auth Links with Supabase persistence}
+        \resumeItem{Features include 5 upcoming/past meetings display, attendee lists, and clean responsive UI with error handling}
     \resumeItemListEnd
 
     \resumeProjectHeading
-    {\textbf{CalSync} $|$ \href{https://calsyncapp.vercel.app/}{\underline{Live Demo}} $|$ \href{https://github.com/tanmayraut45/Meeting-Viewer-App}{\underline{Code}} - \emph{Tech stack: Next.js, React, TypeScript, Tailwind CSS, Composio, Supabase, Vercel}}{}
+    {\textbf{Bank Management System} - \emph{Tech stack: Java, JDBC, MySQL, SQL}}{}
     \resumeItemListStart
-        \resumeItem{CalSync is a lightweight meeting viewer that connects to Google Calendar through the Composio MCP (Auth Links + Proxy API) and persists connections in Supabase}
-        \resumeItem{Shows 5 upcoming and 5 recent past meetings with attendee lists, duration, and expandable details — all with skeleton loading, error handling and a clean responsive UI}
-        \resumeItem{Composio integration: uses Composio v3 Auth Links to create secure connection flows}
-        \resumeItem{Persistent sessions: Supabase (Postgres) stores OAuth sessions so connections survive server restarts}
+        \resumeItem{Built Java banking application with JDBC for CRUD operations, implementing transaction handling with ACID properties}
+        \resumeItem{Secured database connectivity using Prepared Statements to prevent SQL injection, optimizing query performance}
     \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{+1pt}
